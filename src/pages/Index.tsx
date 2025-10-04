@@ -604,9 +604,13 @@ const Index = () => {
             <h3 className="text-2xl font-bold">Приют для животных</h3>
           </div>
           <p className="text-background/80 mb-4">Помогаем кошкам и собакам найти любящий дом</p>
-          <a href="tel:88003332233" className="text-xl font-semibold hover:opacity-80 transition-opacity">
+          <a href="tel:88003332233" className="text-xl font-semibold hover:opacity-80 transition-opacity block mb-4">
             8 800 333 22 33
           </a>
+          <div className="flex items-center justify-center gap-2 text-background/80 mb-4">
+            <Icon name="MapPin" size={20} />
+            <p>г. Екатеринбург, Чкаловский район</p>
+          </div>
           <div className="mt-8 pt-8 border-t border-background/20">
             <p className="text-background/60">© 2024 Приют для животных. Все права защищены.</p>
           </div>
