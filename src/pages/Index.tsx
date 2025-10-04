@@ -183,33 +183,80 @@ const Index = () => {
 
       <section className="py-16 px-4 bg-gradient-to-b from-background to-secondary/20">
         <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">О нашем приюте</h2>
-              <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">Немного о приюте для животных</h2>
+              <div className="w-20 h-1 bg-primary mx-auto mb-4"></div>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-6">
+                Наша компания занимается заботой о бездомных животных уже на протяжении 10 лет
+              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Icon name="Target" size={32} className="text-primary" />
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all hover:-translate-y-1">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Scissors" size={32} className="text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Стерилизуем животных</h3>
                   </div>
-                  <h3 className="text-2xl font-bold">Наша миссия</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Мы спасаем бездомных животных, предоставляем им медицинскую помощь, заботу и любовь. Наша цель — найти каждому питомцу любящую семью и второй шанс на счастливую жизнь.
+                    Наши работники занимаются отловом безнадзорных животных, дальнейшей их вакцинацией, лечением и стерилизацией.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Мы сотрудничаем с ветеринарными клиниками, поэтому стерилизация и кастрация обходятся чуть дешевле, чем обычно.
                   </p>
                 </div>
               </Card>
 
-              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all">
-                <div className="flex flex-col items-center text-center gap-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Icon name="Award" size={32} className="text-primary" />
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all hover:-translate-y-1">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Home" size={32} className="text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Содержим животных</h3>
                   </div>
-                  <h3 className="text-2xl font-bold">Наши достижения</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Мы помогли десяткам животных обрести любящий дом. Все наши воспитанники проходят ветеринарный осмотр, вакцинацию и стерилизацию перед передачей новым хозяевам.
+                    Наша компания старается привлекать жителей города к оказанию материальной, ветеринарной и иной помощи бездомным животным.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Наши работники стараются доносить до владельцев домашних животных необходимую информацию об их правильном содержании.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all hover:-translate-y-1">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Stethoscope" size={32} className="text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Лечим животных</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Наш приют старается оказывать медицинскую помощь бездомным животным в зависимости от финансового положения.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Мы своевременно проводим вакцинацию всех животных и лечим тех, кто болеет.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all hover:-translate-y-1">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Icon name="HandHeart" size={32} className="text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold">Пристраиваем животных</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    В нашем приюте любой желающий может забрать к себе домой понравившееся животное.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Наша компания предоставляет услуги передержки и социализации бездомных животных за умеренную плату или пожертвование.
                   </p>
                 </div>
               </Card>
