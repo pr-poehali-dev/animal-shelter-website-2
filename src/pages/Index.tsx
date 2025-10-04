@@ -188,7 +188,7 @@ const Index = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Немного о приюте для животных</h2>
               <div className="w-20 h-1 bg-primary mx-auto mb-4"></div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto mt-6">
-                Наша компания занимается заботой о бездомных животных уже на протяжении 10 лет
+                Наша компания занимается заботой о бездомных животных
               </p>
             </div>
             
