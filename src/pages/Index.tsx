@@ -132,6 +132,51 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-gradient-to-b from-background to-secondary/20">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">О нашем приюте</h2>
+              <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="Target" size={32} className="text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Наша миссия</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Мы спасаем бездомных животных, предоставляем им медицинскую помощь, заботу и любовь. Наша цель — найти каждому питомцу любящую семью и второй шанс на счастливую жизнь.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="p-8 border-2 border-primary/20 hover:shadow-lg transition-all">
+                <div className="flex flex-col items-center text-center gap-4">
+                  <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="Award" size={32} className="text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Наши достижения</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    За 10 лет работы мы помогли более 2000 животным обрести дом. Все наши воспитанники проходят ветеринарный осмотр, вакцинацию и стерилизацию перед передачей новым хозяевам.
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            <div className="bg-accent/20 rounded-2xl p-8 md:p-12 text-center">
+              <Icon name="Users" size={48} className="text-primary mx-auto mb-4" />
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Присоединяйтесь к нашей миссии</h3>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+                Каждое животное заслуживает любви и заботы. Вместе мы можем изменить их жизнь к лучшему!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-secondary/20">
         <div className="container mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Заберите к себе животное из приюта</h2>
@@ -212,6 +257,77 @@ const Index = () => {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-gradient-to-b from-background to-accent/20">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Истории счастливых хозяев</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Наши воспитанники нашли свои любящие семьи
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+            <Card className="p-6 border-2 border-primary/20 hover:shadow-lg transition-all">
+              <div className="flex gap-2 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <Icon key={star} name="Star" size={20} className="text-primary fill-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Взяли Алису из приюта полгода назад. Она стала настоящим членом нашей семьи! Спокойная, ласковая, обожает детей. Спасибо приюту за такое чудо!"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="User" size={20} className="text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold">Мария Петрова</p>
+                  <p className="text-sm text-muted-foreground">Москва</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 border-2 border-primary/20 hover:shadow-lg transition-all">
+              <div className="flex gap-2 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <Icon key={star} name="Star" size={20} className="text-primary fill-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Мухтар — лучший пес на свете! Умный, преданный, отлично ладит с детьми. Каждый день благодарим судьбу, что встретили его в приюте. Рекомендую всем!"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="User" size={20} className="text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold">Дмитрий Сидоров</p>
+                  <p className="text-sm text-muted-foreground">Санкт-Петербург</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 border-2 border-primary/20 hover:shadow-lg transition-all">
+              <div className="flex gap-2 mb-4">
+                {[1,2,3,4,5].map((star) => (
+                  <Icon key={star} name="Star" size={20} className="text-primary fill-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Мурка принесла в наш дом столько радости! Она игривая, ласковая и очень общительная. Спасибо сотрудникам приюта за их заботу и профессионализм!"
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="User" size={20} className="text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold">Анна Иванова</p>
+                  <p className="text-sm text-muted-foreground">Казань</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
