@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
@@ -329,6 +330,124 @@ const Index = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-secondary/30">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Наш приют</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Посмотрите, как мы заботимся о наших воспитанниках
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="/img/1cf323e8-25db-4790-98f5-d90533ae61cc.jpg" 
+                alt="Интерьер приюта"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                <div className="text-white">
+                  <h3 className="text-xl font-bold mb-2">Комфортные условия</h3>
+                  <p className="text-sm">Чистые и уютные вольеры для каждого питомца</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="/img/e7025812-2615-42b8-a29e-3bc381230a4f.jpg" 
+                alt="Площадка для выгула"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                <div className="text-white">
+                  <h3 className="text-xl font-bold mb-2">Площадка для прогулок</h3>
+                  <p className="text-sm">Просторная территория для игр и активностей</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="/img/96aaadea-c400-4b4d-a146-665a14ef54d9.jpg" 
+                alt="Ветеринарная помощь"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                <div className="text-white">
+                  <h3 className="text-xl font-bold mb-2">Ветеринарная помощь</h3>
+                  <p className="text-sm">Профессиональный уход и медицинское обслуживание</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-background">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Часто задаваемые вопросы</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Ответы на популярные вопросы о приюте и усыновлении
+          </p>
+          
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Как можно забрать животное из приюта?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Позвоните нам по телефону 8 800 333 22 33 или оставьте заявку на сайте. Мы пригласим вас в приют для знакомства с питомцем. После собеседования и проверки условий проживания вы сможете забрать животное домой.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Все ли животные привиты и здоровы?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Да, все наши воспитанники проходят обязательный ветеринарный осмотр, вакцинацию и обработку от паразитов. При усыновлении вы получите полную медицинскую карту питомца.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Нужно ли платить за усыновление?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Усыновление бесплатное, но мы принимаем добровольные пожертвования, которые идут на содержание и лечение других животных в приюте.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Можно ли вернуть животное обратно?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Мы понимаем, что иногда возникают непредвиденные обстоятельства. Если по какой-то причине вы не сможете оставить питомца, мы всегда готовы забрать его обратно. Главное — благополучие животного.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Как я могу помочь приюту?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Вы можете помочь кормом, медикаментами, денежными пожертвованиями или стать волонтером. Любая помощь очень важна для нас и наших воспитанников!
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border-2 border-primary/20 rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+                Можно ли посетить приют и познакомиться с животными?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Конечно! Мы работаем ежедневно с 10:00 до 18:00. Приходите знакомиться с нашими воспитанниками. Предварительная запись не требуется, но мы будем рады, если вы позвоните заранее.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
